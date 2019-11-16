@@ -36,7 +36,8 @@ img {
 button {
   background-color: black;
   border: solid 1px darkred;
-  margin: 15px;
+  padding: 15px;
+  color: darkred;
 }
 button:hover {
   background-color: darkred;
@@ -100,7 +101,7 @@ a:hover {
 
 /*Autres*/
 .pixel {
-  font-family: font-family: 'Press Start 2P', cursive;;
+  font-family: 'Press Start 2P', cursive;
 }.autres-ex2 {
   font-family: ex;
 }.autres-ex3 {
