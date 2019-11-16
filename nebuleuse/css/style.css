@@ -1,0 +1,255 @@
+/*
+Chintoxique Calligraphy
+Version: 1.0.0
+Author: Chintoxique and Nonobstant
+ex = exemple
+*/
+
+/*Police d'écriture*/
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css?family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu+Mono&display=swap');
+/*Elements principaux*/
+body {
+    text-align: center;
+    background-color: black;
+    color: white;
+    cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='47' height='56' viewport='0 0 100 100' style='fill:white;font-size:28px;'><text y='50%'>〣</text></svg>") 16 0,auto; /*Change juste l'emoji*/
+
+}
+h1 {
+
+}
+h2 {
+
+}
+h3 {
+
+}
+p {
+
+}
+img {
+
+}
+/*Boutons*/
+button {
+  background-color: black;
+  border: solid 1px darkred;
+  padding: 15px;
+  color: darkred;
+}
+button:hover {
+  background-color: darkred;
+  border: solid 1px black;
+  color: black!important;
+  cursor: crosshair;
+}
+
+/*Liens*/
+a {
+  text-decoration: none;
+}
+a:hover {
+  background-color: white;
+  color :black;
+  cursor: crosshair;
+}
+
+/*Couleurs*/
+.red {
+  color: darkred;
+}
+.purple {
+  color: purple;
+}
+.pink {
+  color: pink;
+}
+.pastel {
+  color: lightpink;
+}
+.green {
+  color: green;
+}
+.ex {
+  color: ex;
+}
+
+/*Classes de Polices*/
+/*Calligraphy*/
+.calligraphy-ex {
+  font-family: ex;
+}
+.calligraphy-ex2 {
+  font-family: ex;
+}
+.calligraphy-ex3 {
+  font-family: ex;
+}
+
+/*Monospace*/
+.monospace-1 {
+  font-family: 'Roboto Mono', monospace;
+}
+.monospace-2 {
+  font-family: 'VT323', monospace;
+}
+.monospace-3 {
+  font-family: 'Ubuntu Mono', monospace;
+}
+
+/*Autres*/
+.pixel {
+  font-family: 'Press Start 2P', cursive;
+}.autres-ex2 {
+  font-family: ex;
+}.autres-ex3 {
+  font-family: ex;
+}
+.kanji {
+  font-family: kanji;
+}
+
+/*2 Elements*/
+.col2 {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  text-align: center;
+}
+.col2-1 {
+  grid-column: 1;
+  grid-row: 1;
+}
+.col2-2 {
+  grid-column: 2;
+  grid-row: 1;
+}
+.col2 img {
+  max-width:50%;
+  margin: auto;
+}
+
+/*3 Elements*/
+.col3 {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  text-align: center;
+}
+.col3-1 {
+  grid-column: 1;
+  grid-row: 1;
+}
+.col3-2 {
+  grid-column: 2;
+  grid-row: 1;
+}
+.col3-3 {
+  grid-column: 3;
+  grid-row: 1;
+}
+.col3 img {
+  max-width:85%;
+  margin: auto;
+}
+
+/*4 Elements*/
+.col4 {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  text-align: center;
+}
+.col4-1 {
+  grid-column: 1;
+  grid-row: 1;
+}
+.col4-2 {
+  grid-column: 2;
+  grid-row: 1;
+}
+.col4-3 {
+  grid-column: 3;
+  grid-row: 1;
+}
+.col4-4 {
+  grid-column: 4;
+  grid-row: 1;
+}
+.col4 img {
+  max-width:20%;
+  margin: auto;
+}
+
+/*Elements Page-Entière*/
+.full {
+  top:0px;
+  right:0px;
+  height:100vh;
+  width:100vh;
+}
+/*Border Image*/
+.img-border {
+  border: solid 3px darkred;
+}
+.img-border:hover {
+  border: solid 3px white;
+}
+/* The Modal (background) */
+.modal {
+display: none; /* Hidden by default */
+position: fixed; /* Stay in place */
+z-index: 3; /* Sit on top */
+left: 20px;
+top: 0;
+width: 100%; /* Full width */
+height: 100%; /* Full height */
+overflow: auto; /* Enable scroll if needed */
+background-color: rgba(0,0,0,0.9); /* Fallback color */
+background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+padding-top: 60px;
+text-align: left;
+}
+
+/* Modal Content/Box */
+.modal-content {
+background-color: rgba(0,0,0,0.4);
+margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+border: 1px solid darkred;
+width: 20%; /* Could be more or less, depending on screen size */
+color: darkred;
+font-family: 'Roboto Mono', monospace;
+}
+
+/* The Close Button (x) */
+.close {
+position: absolute;
+right: 25px;
+top: 0;
+color: red;
+font-size: 35px;
+font-weight: bold;
+font-family: 'Roboto Mono', monospace;
+}
+
+.close:hover,
+.close:focus {
+color: red;
+cursor: crosshair;
+}
+
+/* Add Zoom Animation */
+.animate {
+-webkit-animation: animatezoom 0.6s;
+animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+from {-webkit-transform: scale(0)}
+to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+from {transform: scale(0)}
+to {transform: scale(1)}
+}

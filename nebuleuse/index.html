@@ -3,8 +3,84 @@
   <head>
     <meta charset="utf-8">
     <title>Nébuleuse</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
+    <h1 class="pixel red">Nebule.us/e</h1>
+    <p class="pixel red">Cryptoggraphic poem</p>
+    <br>
+    <br>
+    <div class="col3">
+      <img onclick="document.getElementById('03').style.display='block';" class="img-border" src="img/03.png" alt="">
+      <img onclick="document.getElementById('02').style.display='block';" class="img-border" src="img/02.png" alt="">
+      <img onclick="document.getElementById('01').style.display='block';" class="img-border" src="img/01.png" alt="">
+    </div>
+
+    <div id="01" class="modal">
+      <span onclick="document.getElementById('01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <h1>000</h1>
+      <pre>
+         ┌──────┐                               
+         │∙INFO∙│
+         ├──────┴─────────────────────────────┐
+         │                                    │
+         ╞▌LUX MINIMA                         │
+         │                                    │
+         │:Lux Minima is the project of an    │
+         │ independent creative group.        │
+         │                                    │
+         │It consist of creating around a     │
+         │scenario a battery of history under │
+         │different mediums.                  │
+         │                                    │
+         │Everything will be displayed in a   │
+         │single medium, retranscribing the   │
+         │collective work and artistic        │
+         │technique on a web format mixing    │
+         │several discipline to make the most │
+         │out of everyone creation.           │
+         │                                    │
+         │Few of the creation will be         │
+         │accessible to the public, the work  │
+         │of the member will be private before│
+         │the final stage of the project.     │
+         │                                    │
+         │There is a public area with shop    │
+         │and social for supporting the       │
+         │members.                            │
+         │                                    │
+         ╞▌SHELLCODE OS                       │
+         │                                    │
+         │:shellcodeOS is the engine of Lux   │
+         │ Minima.                            │
+         │                                    │
+         │An online ecosystem dedicated to    │
+         │digital creation                    │
+         │                                    │
+         │Available anywhere and and          │
+         │compatible with Win,Mac,Linux with  │
+         │all the web technology (such as     │
+         │Javascript, webGL, HTML5, and more).│
+         │                                    │
+         │Made for pc with a Command Interface│
+         │and a Graphical Interface,          │
+         │compatible for mobile.              │
+         │                                    │
+         │                                    │
+         └────────────────────────────────────┘
+      </pre>
+    </div>
+    <script>
+              // Get the modal
+              var modal = document.getElementById('01');
+
+              // When the user clicks anywhere outside of the modal, close it
+              window.onclick = function(event) {
+              if (event.target == modal) {
+              modal.style.display = "none";
+              }
+              }
+    </script>
 
   </body>
 </html>
