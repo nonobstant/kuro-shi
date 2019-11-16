@@ -1,0 +1,185 @@
+/*
+Chintoxique Calligraphy
+Version: 1.0.0
+Author: Chintoxique and Nonobstant
+ex = exemple
+*/
+
+/*Police d'écriture*/
+
+/*Elements principaux*/
+body {
+  text-align: center;
+  background-color: black;
+  color: white;
+  cursor: url('url'), auto;
+}
+h1 {
+
+}
+h2 {
+
+}
+h3 {
+
+}
+p {
+
+}
+img {
+
+}
+/*Boutons*/
+button {
+  background-color: black;
+  border: solid 1px darkred;
+  margin: 15px;
+}
+button:hover {
+  background-color: darkred;
+  border: solid 1px black;
+  color: black!important;
+  cursor: crosshair;
+}
+
+/*Liens*/
+a {
+  text-decoration: none;
+}
+a:hover {
+  background-color: white;
+  color :black;
+  cursor: crosshair;
+}
+
+/*Couleurs*/
+.red {
+  color: darkred;
+}
+.purple {
+  color: purple;
+}
+.pink {
+  color: pink;
+}
+.pastel {
+  color: lightpink;
+}
+.green {
+  color: green;
+}
+.ex {
+  color: ex;
+}
+
+/*Classes de Polices*/
+/*Calligraphy*/
+.calligraphy-ex {
+  font-family: ex;
+}
+.calligraphy-ex2 {
+  font-family: ex;
+}
+.calligraphy-ex3 {
+  font-family: ex;
+}
+
+/*Monospace*/
+.monospace-ex {
+  font-family: ex;
+}
+.monospace-ex2 {
+  font-family: ex;
+}
+.monospace-ex3 {
+  font-family: ex;
+}
+
+/*Autres*/
+.autres-ex {
+  font-family: ex;
+}.autres-ex2 {
+  font-family: ex;
+}.autres-ex3 {
+  font-family: ex;
+}
+.kanji {
+  font-family: kanji;
+}
+
+/*2 Elements*/
+.col2 {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  text-align: center;
+}
+.col2-1 {
+  grid-column: 1;
+  grid-row: 1;
+}
+.col2-2 {
+  grid-column: 2;
+  grid-row: 1;
+}
+.col2 img {
+  max-width:50%;
+  margin: auto;
+}
+
+/*3 Elements*/
+.col3 {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  text-align: center;
+}
+.col3-1 {
+  grid-column: 1;
+  grid-row: 1;
+}
+.col3-2 {
+  grid-column: 2;
+  grid-row: 1;
+}
+.col3-3 {
+  grid-column: 3;
+  grid-row: 1;
+}
+.col3 img {
+  max-width:30%;
+  margin: auto;
+}
+
+/*4 Elements*/
+.col4 {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  text-align: center;
+}
+.col4-1 {
+  grid-column: 1;
+  grid-row: 1;
+}
+.col4-2 {
+  grid-column: 2;
+  grid-row: 1;
+}
+.col4-3 {
+  grid-column: 3;
+  grid-row: 1;
+}
+.col4-4 {
+  grid-column: 4;
+  grid-row: 1;
+}
+.col4 img {
+  max-width:20%;
+  margin: auto;
+}
+
+/*Elements Page-Entière*/
+.full {
+  top:0px;
+  right:0px;
+  height:100vh;
+  width:100vh;
+}
