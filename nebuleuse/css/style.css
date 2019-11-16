@@ -14,24 +14,30 @@ ex = exemple
 body {
     text-align: center;
     background-color: black;
+    /*background-image: url(bg.png);*/
+    background-size: cover;
     color: white;
     cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='47' height='56' viewport='0 0 100 100' style='fill:white;font-size:28px;'><text y='50%'>〣</text></svg>") 16 0,auto; /*Change juste l'emoji*/
 
 }
 h1 {
-
+  background-color: black;
 }
 h2 {
-
+  background-color: black;
 }
 h3 {
-
+  background-color: black;
 }
 p {
-
+  background-color: black;
 }
-img {
-
+img:hover {
+  cursor: crosshair;
+}
+iframe {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: none;
 }
 /*Boutons*/
 button {
@@ -202,7 +208,7 @@ position: fixed; /* Stay in place */
 z-index: 3; /* Sit on top */
 left: 20px;
 top: 0;
-width: 100%; /* Full width */
+width: 98%; /* Full width */
 height: 100%; /* Full height */
 overflow: auto; /* Enable scroll if needed */
 background-color: rgba(0,0,0,0.9); /* Fallback color */
