@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css?family=Inconsolata:700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=UnifrakturCook:700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic+Coding&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
+
+body{
+  background-color: black;
+  color:white;
+  font-size: 23px;
+  font-family: 'Inconsolata', monospace;
+  text-align: center;
+  cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='47' height='56' viewport='0 0 100 100' style='fill:white;font-size:28px;'><text y='50%'>Φ</text></svg>") 16 0,auto;
+}
+
+h6{
+  color:Darkred;
+}
+
+#boo {
+  background-image: url("C:\Users\Envy\Desktop\CODE\face.png");
+  min-width:300px;
+  min-height: 300px;
+}
+
+.sang{color: Darkred;}
+
+.caly{
+  font-family: 'UnifrakturCook', cursive;
+  font-size: 33px;
+  font-style: italic;
+  font-weight: bold
+  }
+
+.cardiakk{font-family: 'Nanum Gothic Coding', monospace;
+font-size: 33px;}
+
+#cardiak{font-style: italic;}
+
+.pix {font-family: 'Press Start 2P', cursive;
+font-size: 77px;
+font-color: white;
+}
+
+.separator {
+    height:50px;
+    display: block;
+  }
+
+  #face{
+    height:30vh;
+    text-align: center;
+  }
+
+#gauche{
+  width: 30vw;
+
+  text-align: left;
+}
+
+#droite{
+  width: 30vw;
+
+  text-align: right;
+}
+
+#gorge {color: red;}
