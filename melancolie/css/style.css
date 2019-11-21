@@ -17,7 +17,7 @@ h6{
 }
 
 #boo {
-  background-image: url("C:\Users\Envy\Desktop\CODE\face.png");
+  background-image: url("../img/face.png");
   min-width:300px;
   min-height: 300px;
 }
