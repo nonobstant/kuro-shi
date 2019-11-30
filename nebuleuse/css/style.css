@@ -11,7 +11,13 @@ ex = exemple
 @import url('https://fonts.googleapis.com/css?family=VT323&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Ubuntu+Mono&display=swap');
 /*Elements principaux*/
+* {
+    margin:2px;
+
+}
+body::-webkit-scrollbar { width: 0 !important }
 body {
+    margin: 0;
     text-align: center;
     background-color: black;
     /*background-image: url(bg.png);*/
@@ -21,13 +27,13 @@ body {
 
 }
 h1 {
-  background-color: black;
+
 }
 h2 {
   background-color: black;
 }
 h3 {
-  background-color: black;
+
 }
 p {
   background-color: black;
@@ -82,7 +88,9 @@ a:hover {
 .ex {
   color: ex;
 }
-
+.left {
+  text-align: left!important;
+}
 /*Classes de Polices*/
 /*Calligraphy*/
 .calligraphy-ex {
@@ -156,7 +164,7 @@ a:hover {
   grid-row: 1;
 }
 .col3 img {
-  max-width:85%;
+  max-width:95%;
   margin: auto;
 }
 
@@ -186,7 +194,23 @@ a:hover {
   max-width:20%;
   margin: auto;
 }
-
+/*Custom position*/
+.vh20 {
+  height: 20vh;
+}
+.vh80 {
+  height: 80vh;
+}
+.vh100 {
+  height: 100vh;
+}
+.padding10 {
+  padding: 10px;
+}
+.centerElement {
+  top: 50%;
+  left: 50%;
+}
 /*Elements Page-Entière*/
 .full {
   top:0px;
@@ -207,14 +231,16 @@ display: none; /* Hidden by default */
 position: fixed; /* Stay in place */
 z-index: 3; /* Sit on top */
 left: 20px;
-top: 0;
-width: 98%; /* Full width */
-height: 100%; /* Full height */
+top: 7%;
+left: 25%;
+width: 50%; /* Full width */
+height: 70%; /* Full height */
 overflow: auto; /* Enable scroll if needed */
-background-color: rgba(0,0,0,0.9); /* Fallback color */
-background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+
+background-color: black; /* Black w/ opacity */
 padding-top: 60px;
 text-align: left;
+opacity: 0.9;
 }
 
 /* Modal Content/Box */
@@ -294,4 +320,32 @@ to {transform: scale(1)}
 .imgTxt .txt:hover {
   opacity: 1;
   background-color: rgba(0,0,0,.8);
+}
+
+/* ID */
+#sky_bg {
+  background-image: url(bg_nebula.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 0;
+  top: 0;
+  animation: filter-animation 30s;
+}
+/*Animation*/
+@keyframes filter-animation {
+  0% {
+    filter: hue-rotate(0deg) saturate(1) contrast(1);
+
+  }
+
+  50% {
+    filter: hue-rotate(100deg) saturate(8) contrast(2);
+
+  }
+
+  100% {
+    filter: hue-rotate(0deg) saturate(1) contrast(1);
+
+  }
 }
