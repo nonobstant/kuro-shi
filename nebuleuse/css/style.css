@@ -18,25 +18,36 @@ ex = exemple
 body::-webkit-scrollbar { width: 0 !important }
 body {
     margin: 0;
-    text-align: center;
+
     background-color: black;
     /*background-image: url(bg.png);*/
     background-size: cover;
     color: white;
-    cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='47' height='56' viewport='0 0 100 100' style='fill:white;font-size:28px;'><text y='50%'>〣</text></svg>") 16 0,auto; /*Change juste l'emoji*/
+    cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='30' height='30' viewport='0 0 100 100' style='fill:white;font-size:28px;'><text y='50%'>▪</text></svg>") 16 0,auto; /*Change juste l'emoji*/
 
 }
+.center {
+  text-align: center;
+}
+/*firefox hide scrollbar*/
+@-moz-document url-prefix() {
+    html,body{overflow: hidden !important;}
+}
+
+
 h1 {
 
 }
 h2 {
-  background-color: black;
+
 }
 h3 {
 
 }
 p {
+  display: block;
   background-color: black;
+
 }
 img:hover {
   cursor: crosshair;
@@ -62,6 +73,7 @@ button:hover {
 /*Liens*/
 a {
   text-decoration: none;
+  background-color: black;
 }
 a:hover {
   background-color: white;
@@ -70,24 +82,91 @@ a:hover {
 }
 
 /*Couleurs*/
+/*red*/
 .red {
   color: darkred;
 }
+.red2 {
+  color: red;
+}
+.red3 {
+  color: crimson;
+}
+
+/*purple*/
 .purple {
   color: purple;
 }
+.purple2 {
+  color: slateblue;
+}
+.purple3 {
+  color: orchid;
+}
+.purple4 {
+  color: indigo;
+}
+
+/*pink*/
 .pink {
   color: pink;
 }
+.pink2 {
+  color: hotpink;
+}
+.pink3 {
+  color: darkorchid;
+}
+
+/*pastel*/
 .pastel {
   color: lightpink;
 }
+.pastel2 {
+  color: papayawhip;
+}
+.pastel3 {
+  color: peachpuff;
+}
+.pastel4 {
+  color: mediumslateblue;
+}
+.pastel5 {
+  color: cornflowerblue;
+}
+.pastel6 {
+  color: lavenderblush;
+}
+.pastel7 {
+  color: azure;
+}
+
+/*green*/
 .green {
   color: green;
 }
-.ex {
-  color: ex;
+.green2 {
+  color: seagreen;
 }
+.green3 {
+  color: 	darkgreen;
+}
+.green4 {
+  color: seagreen;
+}
+
+/*blue*/
+.blue {
+  color: darkcyan;
+}
+.blue2 {
+  color: lightseagreen;
+}
+.blue3 {
+  color: 	mediumturquoise;
+}
+
+
 .left {
   text-align: left!important;
 }
@@ -236,7 +315,7 @@ left: 25%;
 width: 50%; /* Full width */
 height: 70%; /* Full height */
 overflow: auto; /* Enable scroll if needed */
-
+overflow-x: hidden;
 background-color: black; /* Black w/ opacity */
 padding-top: 60px;
 text-align: left;
@@ -321,8 +400,18 @@ to {transform: scale(1)}
   opacity: 1;
   background-color: rgba(0,0,0,.8);
 }
+/*sticky header*/
+.sticky {
+  position: fixed!important;
+  top: 0;
+}
+
 
 /* ID */
+#home {
+  position: absolute;
+  z-index: 1;
+}
 #sky_bg {
   background-image: url(bg_nebula.png);
   background-repeat: no-repeat;
@@ -330,12 +419,17 @@ to {transform: scale(1)}
   background-position: center;
   padding: 0;
   top: 0;
-  animation: filter-animation 30s;
+  animation: filter-animation 30s infinite;
+
+}
+
+#shell {
+  height:100vh;
 }
 /*Animation*/
 @keyframes filter-animation {
   0% {
-    filter: hue-rotate(0deg) saturate(1) contrast(1);
+    filter: hue-rotate(0deg) saturate(1) contrast(1.3);
 
   }
 
@@ -345,7 +439,7 @@ to {transform: scale(1)}
   }
 
   100% {
-    filter: hue-rotate(0deg) saturate(1) contrast(1);
+    filter: hue-rotate(0deg) saturate(1) contrast(1.2);
 
   }
 }
