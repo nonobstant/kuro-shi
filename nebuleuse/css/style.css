@@ -411,6 +411,7 @@ to {transform: scale(1)}
 #home {
   position: absolute;
   z-index: 1;
+  padding: 10px;
 }
 #sky_bg {
   background-image: url(bg_nebula.png);
@@ -424,7 +425,9 @@ to {transform: scale(1)}
 }
 
 #shell {
-  height:100vh;
+  max-width: 80%;
+  margin: auto;
+
 }
 /*Animation*/
 @keyframes filter-animation {
@@ -441,5 +444,11 @@ to {transform: scale(1)}
   100% {
     filter: hue-rotate(0deg) saturate(1) contrast(1.2);
 
+  }
+}
+/*responsive*/
+@media only screen and (max-width: 800px) {
+  #shell {
+    max-width: 99%
   }
 }
