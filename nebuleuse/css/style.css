@@ -11,26 +11,43 @@ ex = exemple
 @import url('https://fonts.googleapis.com/css?family=VT323&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Ubuntu+Mono&display=swap');
 /*Elements principaux*/
+* {
+    margin:2px;
+
+}
+body::-webkit-scrollbar { width: 0 !important }
 body {
-    text-align: center;
+    margin: 0;
+
     background-color: black;
     /*background-image: url(bg.png);*/
     background-size: cover;
     color: white;
-    cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='47' height='56' viewport='0 0 100 100' style='fill:white;font-size:28px;'><text y='50%'>〣</text></svg>") 16 0,auto; /*Change juste l'emoji*/
+    cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='30' height='30' viewport='0 0 100 100' style='fill:white;font-size:28px;'><text y='50%'>▪</text></svg>") 16 0,auto; /*Change juste l'emoji*/
 
 }
+.center {
+  text-align: center;
+}
+/*firefox hide scrollbar*/
+@-moz-document url-prefix() {
+    html,body{overflow: hidden !important;}
+}
+
+
 h1 {
-  background-color: black;
+
 }
 h2 {
-  background-color: black;
+
 }
 h3 {
-  background-color: black;
+
 }
 p {
+  display: block;
   background-color: black;
+
 }
 img:hover {
   cursor: crosshair;
@@ -56,6 +73,7 @@ button:hover {
 /*Liens*/
 a {
   text-decoration: none;
+  background-color: black;
 }
 a:hover {
   background-color: white;
@@ -64,25 +82,94 @@ a:hover {
 }
 
 /*Couleurs*/
+/*red*/
 .red {
   color: darkred;
 }
+.red2 {
+  color: red;
+}
+.red3 {
+  color: crimson;
+}
+
+/*purple*/
 .purple {
   color: purple;
 }
+.purple2 {
+  color: slateblue;
+}
+.purple3 {
+  color: orchid;
+}
+.purple4 {
+  color: indigo;
+}
+
+/*pink*/
 .pink {
   color: pink;
 }
+.pink2 {
+  color: hotpink;
+}
+.pink3 {
+  color: darkorchid;
+}
+
+/*pastel*/
 .pastel {
   color: lightpink;
 }
+.pastel2 {
+  color: papayawhip;
+}
+.pastel3 {
+  color: peachpuff;
+}
+.pastel4 {
+  color: mediumslateblue;
+}
+.pastel5 {
+  color: cornflowerblue;
+}
+.pastel6 {
+  color: lavenderblush;
+}
+.pastel7 {
+  color: azure;
+}
+
+/*green*/
 .green {
   color: green;
 }
-.ex {
-  color: ex;
+.green2 {
+  color: seagreen;
+}
+.green3 {
+  color: 	darkgreen;
+}
+.green4 {
+  color: seagreen;
 }
 
+/*blue*/
+.blue {
+  color: darkcyan;
+}
+.blue2 {
+  color: lightseagreen;
+}
+.blue3 {
+  color: 	mediumturquoise;
+}
+
+
+.left {
+  text-align: left!important;
+}
 /*Classes de Polices*/
 /*Calligraphy*/
 .calligraphy-ex {
@@ -156,7 +243,7 @@ a:hover {
   grid-row: 1;
 }
 .col3 img {
-  max-width:85%;
+  max-width:95%;
   margin: auto;
 }
 
@@ -186,7 +273,23 @@ a:hover {
   max-width:20%;
   margin: auto;
 }
-
+/*Custom position*/
+.vh20 {
+  height: 20vh;
+}
+.vh80 {
+  height: 80vh;
+}
+.vh100 {
+  height: 100vh;
+}
+.padding10 {
+  padding: 10px;
+}
+.centerElement {
+  top: 50%;
+  left: 50%;
+}
 /*Elements Page-Entière*/
 .full {
   top:0px;
@@ -199,7 +302,7 @@ a:hover {
   border: solid 3px darkred;
 }
 .img-border:hover {
-  border: solid 3px white;
+  border: solid 3px green;
 }
 /* The Modal (background) */
 .modal {
@@ -207,14 +310,16 @@ display: none; /* Hidden by default */
 position: fixed; /* Stay in place */
 z-index: 3; /* Sit on top */
 left: 20px;
-top: 0;
-width: 98%; /* Full width */
-height: 100%; /* Full height */
+top: 7%;
+left: 25%;
+width: 50%; /* Full width */
+height: 70%; /* Full height */
 overflow: auto; /* Enable scroll if needed */
-background-color: rgba(0,0,0,0.9); /* Fallback color */
-background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+overflow-x: hidden;
+background-color: black; /* Black w/ opacity */
 padding-top: 60px;
 text-align: left;
+opacity: 0.9;
 }
 
 /* Modal Content/Box */
@@ -258,4 +363,92 @@ to {-webkit-transform: scale(1)}
 @keyframes animatezoom {
 from {transform: scale(0)}
 to {transform: scale(1)}
+}
+/*
+/*Img + Txt*/
+/*All*/
+.imgTxt {
+ position: relative;
+ width: 100%;
+ margin: auto;
+}
+/*Img*/
+.imgTxt .image {
+ display: block;
+ width: 100%;
+ height: auto;
+ margin: auto;
+}
+
+/*Txt*/
+.imgTxt .txt {
+
+ font-size: 30px;
+ line-height: 1.5em;
+ text-shadow: 2px 2px 2px #000;
+ text-align: center;
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+ width: 100%;
+ height: 100%;
+ margin: auto;
+ opacity: 0;
+}
+.imgTxt .txt:hover {
+  opacity: 1;
+  background-color: rgba(0,0,0,.8);
+}
+/*sticky header*/
+.sticky {
+  position: fixed!important;
+  top: 0;
+}
+
+
+/* ID */
+#home {
+  position: absolute;
+  z-index: 1;
+  padding: 10px;
+}
+#sky_bg {
+  background-image: url(bg_nebula.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 0;
+  top: 0;
+  animation: filter-animation 30s infinite;
+
+}
+
+#shell {
+  max-width: 80%;
+  margin: auto;
+
+}
+/*Animation*/
+@keyframes filter-animation {
+  0% {
+    filter: hue-rotate(0deg) saturate(1) contrast(1.3);
+
+  }
+
+  50% {
+    filter: hue-rotate(100deg) saturate(8) contrast(2);
+
+  }
+
+  100% {
+    filter: hue-rotate(0deg) saturate(1) contrast(1.2);
+
+  }
+}
+/*responsive*/
+@media only screen and (max-width: 800px) {
+  #shell {
+    max-width: 99%
+  }
 }
