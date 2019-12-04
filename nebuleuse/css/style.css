@@ -80,7 +80,13 @@ a:hover {
   color :black;
   cursor: crosshair;
 }
-
+span {
+  min-width: 5px;
+  display: inline-block;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 14px;
+  color: green;
+}
 /*Couleurs*/
 /*red*/
 .red {
@@ -270,7 +276,7 @@ a:hover {
   grid-row: 1;
 }
 .col4 img {
-  max-width:20%;
+  width:100%;
   margin: auto;
 }
 /*Custom position*/
@@ -405,8 +411,9 @@ to {transform: scale(1)}
   position: fixed!important;
   top: 0;
 }
+.prompt {
 
-
+}
 /* ID */
 #home {
   position: absolute;
@@ -424,6 +431,14 @@ to {transform: scale(1)}
 
 }
 
+#nono {
+  height: 100vh;
+
+}
+#nono-img {
+  border: solid 3px green;
+
+}
 #shell {
   max-width: 80%;
   margin: auto;
