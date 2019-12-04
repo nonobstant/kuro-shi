@@ -34,11 +34,15 @@ h6{
 .cardiakk{font-family: 'Nanum Gothic Coding', monospace;
 font-size: 33px;}
 
+.incosolata {
+    font-family: 'Inconsolata', monospace;
+}
+
 #cardiak{font-style: italic;}
 
 .pix {font-family: 'Press Start 2P', cursive;
-font-size: 77px;
-font-color: white;
+ font-size:45px!important;
+ font-color: white;
 }
 
 .separator {
@@ -64,3 +68,9 @@ font-color: white;
 }
 
 #gorge {color: red;}
+
+
+.col2 {
+  grid-template-columns: 50% 50%;
+  text-align: center;
+}
