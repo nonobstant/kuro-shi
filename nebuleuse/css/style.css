@@ -87,6 +87,9 @@ span {
   font-size: 14px;
   color: green;
 }
+pre {
+  font-size: 10px;
+}
 /*Couleurs*/
 /*red*/
 .red {
@@ -229,7 +232,24 @@ span {
   max-width:50%;
   margin: auto;
 }
-
+/*2 Elements ++*/
+.col2min {
+  display: grid;
+  grid-template-columns: 30% 80%;
+  text-align: center;
+}
+.col2-1min {
+  grid-column: 1;
+  grid-row: 1;
+}
+.col2-2min {
+  grid-column: 2;
+  grid-row: 1;
+}
+.col2min img {
+  max-width:80%;
+  margin: auto;
+}
 /*3 Elements*/
 .col3 {
   display: grid;
@@ -439,6 +459,11 @@ to {transform: scale(1)}
   border: solid 3px green;
 
 }
+#nono-img:hover {
+  border: solid 3px red;
+  animation: filter-animation 2s infinite;
+}
+
 #shell {
   max-width: 80%;
   margin: auto;
@@ -465,5 +490,9 @@ to {transform: scale(1)}
 @media only screen and (max-width: 800px) {
   #shell {
     max-width: 99%
+  }
+  .modal {
+    width: 95%;
+    left: 0;
   }
 }

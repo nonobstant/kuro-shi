@@ -1,4 +1,4 @@
-var $lines = $('.prompt p');
+var $lines = $('.prompt pre');
 $lines.hide();
 var lineContents = new Array();
 
@@ -16,17 +16,22 @@ var terminal = function() {
     var charIdx = 0;
 
     var typeChar = function() {
-      var rand = Math.round(Math.random() * 150) + 25;
+      var rand = Math.round(Math.random() * 150) + 5;
 
       setTimeout(function() {
         var char = content[charIdx++];
         element.append(char);
         if(typeof char !== "undefined")
           typeChar();
+        else {
+
+          element.removeClass('active red');
+          typeLine(++idx);
+        }
       }, skip ? 0 : rand);
     }
-    content = '[' + content + ']';
-    element.append('nonobstant> ').addClass('active');
+    content = '['+Math.round(Math.round(Math.random()*10)*2/idx)+ ']  ' + content + '';
+    element.append('').addClass('active red');
     typeChar();
   }
 
