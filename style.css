@@ -1,5 +1,5 @@
 /*
-Chintoxique Calligraphy
+Kuro-shi CSS
 Version: 1.0.0
 Author: Chintoxique and Nonobstant
 ex = exemple
@@ -11,12 +11,47 @@ ex = exemple
 @import url('https://fonts.googleapis.com/css?family=VT323&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Ubuntu+Mono&display=swap');
 /*Elements principaux*/
-body {
-  text-align: center;
-  background-color: black;
-  color: white;
-  cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='47' height='56' viewport='0 0 100 100' style='fill:white;font-size:28px;'><text y='50%'>〣</text></svg>") 16 0,auto; /*Change juste l'emoji*/
+* {
+    margin:2px;
+    overflow-x: hidden;
+    scrollbar-color: darkred #fff0;
+    scrollbar-width: thin;
 }
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #fff0;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: darkred;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: darkred;
+}
+
+body {
+    margin: 0;
+
+    background-color: black;
+    /*background-image: url(bg.png);*/
+    background-size: cover;
+    color: white;
+    cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='30' height='30' viewport='0 0 100 100' style='fill:white;font-size:28px;'><text y='50%'>▪</text></svg>") 16 0,auto; /*Change juste l'emoji*/
+
+}
+.center {
+  text-align: center;
+}
+
+
+
 h1 {
 
 }
@@ -27,10 +62,16 @@ h3 {
 
 }
 p {
+  display: block;
+  background-color: black;
 
 }
-img {
-
+img:hover {
+  cursor: crosshair;
+}
+iframe {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: none;
 }
 /*Boutons*/
 button {
@@ -49,33 +90,112 @@ button:hover {
 /*Liens*/
 a {
   text-decoration: none;
+  background-color: black;
 }
 a:hover {
   background-color: white;
   color :black;
   cursor: crosshair;
 }
-
+span {
+  min-width: 5px;
+  display: inline-block;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 14px;
+  color: green;
+}
+pre {
+  font-size: 10px;
+}
 /*Couleurs*/
+/*red*/
 .red {
   color: darkred;
 }
+.red2 {
+  color: red;
+}
+.red3 {
+  color: crimson;
+}
+
+/*purple*/
 .purple {
   color: purple;
 }
+.purple2 {
+  color: slateblue;
+}
+.purple3 {
+  color: orchid;
+}
+.purple4 {
+  color: indigo;
+}
+
+/*pink*/
 .pink {
   color: pink;
 }
+.pink2 {
+  color: hotpink;
+}
+.pink3 {
+  color: darkorchid;
+}
+
+/*pastel*/
 .pastel {
   color: lightpink;
 }
+.pastel2 {
+  color: papayawhip;
+}
+.pastel3 {
+  color: peachpuff;
+}
+.pastel4 {
+  color: mediumslateblue;
+}
+.pastel5 {
+  color: cornflowerblue;
+}
+.pastel6 {
+  color: lavenderblush;
+}
+.pastel7 {
+  color: azure;
+}
+
+/*green*/
 .green {
   color: green;
 }
-.ex {
-  color: ex;
+.green2 {
+  color: seagreen;
+}
+.green3 {
+  color: 	darkgreen;
+}
+.green4 {
+  color: seagreen;
 }
 
+/*blue*/
+.blue {
+  color: darkcyan;
+}
+.blue2 {
+  color: lightseagreen;
+}
+.blue3 {
+  color: 	mediumturquoise;
+}
+
+
+.left {
+  text-align: left!important;
+}
 /*Classes de Polices*/
 /*Calligraphy*/
 .calligraphy-ex {
@@ -129,7 +249,24 @@ a:hover {
   max-width:50%;
   margin: auto;
 }
-
+/*2 Elements ++*/
+.col2min {
+  display: grid;
+  grid-template-columns: 30% 80%;
+  text-align: center;
+}
+.col2-1min {
+  grid-column: 1;
+  grid-row: 1;
+}
+.col2-2min {
+  grid-column: 2;
+  grid-row: 1;
+}
+.col2min img {
+  max-width:80%;
+  margin: auto;
+}
 /*3 Elements*/
 .col3 {
   display: grid;
@@ -149,7 +286,7 @@ a:hover {
   grid-row: 1;
 }
 .col3 img {
-  max-width:85%;
+  max-width:95%;
   margin: auto;
 }
 
@@ -176,10 +313,26 @@ a:hover {
   grid-row: 1;
 }
 .col4 img {
-  max-width:20%;
+  width:100%;
   margin: auto;
 }
-
+/*Custom position*/
+.vh20 {
+  height: 20vh;
+}
+.vh80 {
+  height: 80vh;
+}
+.vh100 {
+  height: 100vh;
+}
+.padding10 {
+  padding: 10px;
+}
+.centerElement {
+  top: 50%;
+  left: 50%;
+}
 /*Elements Page-Entière*/
 .full {
   top:0px;
@@ -187,6 +340,72 @@ a:hover {
   height:100vh;
   width:100vh;
 }
+/*Border Image*/
+.img-border {
+  border: solid 3px darkred;
+}
+.img-border:hover {
+  border: solid 3px green;
+}
+/* The Modal (background) */
+.modal {
+display: none; /* Hidden by default */
+position: fixed; /* Stay in place */
+z-index: 3; /* Sit on top */
+left: 20px;
+top: 7%;
+left: 25%;
+width: 50%; /* Full width */
+height: 70%; /* Full height */
+background-color: black; /* Black w/ opacity */
+padding-top: 60px;
+text-align: left;
+opacity: 0.9;
+}
+
+/* Modal Content/Box */
+.modal-content {
+background-color: rgba(0,0,0,0.4);
+margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+border: 1px solid darkred;
+width: 20%; /* Could be more or less, depending on screen size */
+color: darkred;
+font-family: 'Roboto Mono', monospace;
+}
+
+/* The Close Button (x) */
+.close {
+position: absolute;
+right: 25px;
+top: 0;
+color: red;
+font-size: 35px;
+font-weight: bold;
+font-family: 'Roboto Mono', monospace;
+}
+
+.close:hover,
+.close:focus {
+color: red;
+cursor: crosshair;
+}
+
+/* Add Zoom Animation */
+.animate {
+-webkit-animation: animatezoom 0.6s;
+animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+from {-webkit-transform: scale(0)}
+to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+from {transform: scale(0)}
+to {transform: scale(1)}
+}
+/*
 /*Img + Txt*/
 /*All*/
 .imgTxt {
@@ -220,5 +439,86 @@ a:hover {
 }
 .imgTxt .txt:hover {
   opacity: 1;
-  background-color: rgba(0,0,0,.5);
+  background-color: rgba(0,0,0,.8);
+}
+/*sticky header*/
+.sticky {
+  position: fixed!important;
+  top: 0;
+}
+.prompt {
+
+}
+.marginTop7 {
+  margin-top: 15%;
+}
+.padTop35 {
+  padding-top: 35px;
+}
+/* ID */
+#home {
+  position: absolute;
+  z-index: 1;
+  padding: 10px;
+}
+#sky_bg {
+  background-image: url(bg_nebula.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 0;
+  top: 0;
+  animation: filter-animation 30s infinite;
+
+}
+
+#nono {
+  height: 100vh;
+}
+#nono-img {
+  border: solid 3px green;
+
+}
+#nono-img:hover {
+  border: solid 3px red;
+  animation: filter-animation 2s infinite;
+}
+
+#shell {
+  max-width: 80%;
+  margin: auto;
+
+}
+#setup_button {
+    display: none;
+}
+/*Animation*/
+@keyframes filter-animation {
+  0% {
+    filter: hue-rotate(0deg) saturate(1) contrast(1.3);
+
+  }
+
+  50% {
+    filter: hue-rotate(100deg) saturate(8) contrast(2);
+
+  }
+
+  100% {
+    filter: hue-rotate(0deg) saturate(1) contrast(1.2);
+
+  }
+}
+
+.grow { transition: all .2s ease-in-out; }
+.grow:hover { transform: scale(1.1); }
+/*responsive*/
+@media only screen and (max-width: 800px) {
+  #shell {
+    max-width: 99%
+  }
+  .modal {
+    width: 95%;
+    left: 0;
+  }
 }
