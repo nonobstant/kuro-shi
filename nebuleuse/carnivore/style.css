@@ -10,10 +10,11 @@ ex = exemple
 @import url('https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap');
 @import url('https://fonts.googleapis.com/css?family=VT323&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Ubuntu+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css?family=UnifrakturCook:700&display=swap');
 /*Elements principaux*/
 * {
     margin:2px;
-    overflow: hidden;
+    overflow: auto;
 }
 
 body {
@@ -29,10 +30,7 @@ body {
 .center {
   text-align: center;
 }
-/*firefox hide scrollbar*/
-@-moz-document url-prefix() {
-    html,body{overflow: hidden !important;}
-}
+
 
 
 h1 {
@@ -47,6 +45,7 @@ h3 {
 p {
   display: block;
   background-color: black;
+  font-size: 13px;
 
 }
 img:hover {
@@ -88,7 +87,7 @@ span {
   color: green;
 }
 pre {
-  font-size: 10px;
+  font-size: 12px;
 }
 /*Couleurs*/
 /*red*/
@@ -181,8 +180,8 @@ pre {
 }
 /*Classes de Polices*/
 /*Calligraphy*/
-.calligraphy-ex {
-  font-family: ex;
+.calligraphy {
+  font-family: 'UnifrakturCook', cursive;
 }
 .calligraphy-ex2 {
   font-family: ex;
@@ -494,6 +493,25 @@ to {transform: scale(1)}
 
 .grow { transition: all .2s ease-in-out; }
 .grow:hover { transform: scale(1.1); }
+
+/*POEM PAGE*/
+.box {
+  max-width: 450px;
+  text-align: left;
+  padding: 25px;
+}
+.sidebar {
+  float: left;
+  min-width: 15%;
+  height: 100vh;
+  border-right: solid 3px darkred;
+  text-align: center;
+}
+.sidebar a {
+  padding: 15px;
+  display: block;
+  width: 90%;
+}
 /*responsive*/
 @media only screen and (max-width: 800px) {
   #shell {
