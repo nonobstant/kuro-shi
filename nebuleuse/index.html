@@ -3,7 +3,15 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Nébuleuse</title>
+    <title>nebule.us/e</title>
+    <link rel="manifest" href="/manifest.json">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-barstyle" content="black-translucent">
+    <link rel="apple-touch-icon" href="icon/icon.png">
+    <!-- for Chrome on Android, multi-resolution icon of 196x196 -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="shortcut icon" sizes="192x192" href="icon/icon.png">
+    <link rel="icon" type="image/png" href="icon/icon.png" />
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body id="body">
@@ -13,7 +21,7 @@
         <br>
         <br>
         <br>
-        <a class="purple pixel padding10" href="#nono">[-  nonobstant.₀  -]</a>
+        <a class="purple pixel padding10" href="https://www.instagram.com/nonobstant_.l">[-  nonobstant.₀  -]</a>
         <br>
         <br>
         <br>
@@ -21,7 +29,7 @@
         <br>
         <br>
         <br>
-        <a class="purple4 pixel padding10" href="#mandi">[-  mandibule.₂  -]</a>
+        <a class="purple4 pixel padding10" href="#mandi">[-  mandibules.₂  -]</a>
         <br>
         <br>
         <br>
@@ -34,37 +42,35 @@
         <br>
         <br>
         <br>
-        <a class="pink3 pixel padding10" href="#m">[-  ....₅  -]</a>
+        <a class="pink3 pixel padding10" href="#m">[-  ....₅  -]</a> <br>
+        <button id="setup_button" onclick="installApp()">APP</button>
       </div>
     </div>
 
     <div id="carn" class="center vh100 padding10">
 
-      <a href="carnivore/introitus.html"><button class="pixel marginTop7" type="button" name="button">Introitus</button></a></a>
-      <a href=""><button class="pixel" type="button" name="button">EMPTY</button></a></a>
-      <a href=""><button class="pixel" type="button" name="button">EMPTY</button></a></a> <br>
-      <a href=""><button class="pixel" type="button" name="button">EMPTY</button></a></a>
-      <a href=""><button class="pixel" type="button" name="button">EMPTY</button></a></a>
-      <a href=""><button class="pixel" type="button" name="button">EMPTY</button></a></a> <br>
-      <a href=""><button class="pixel" type="button" name="button">EMPTY</button></a></a>
-      <a href=""><button class="pixel" type="button" name="button">EMPTY</button></a></a>
-      <a href=""><button class="pixel" type="button" name="button">EMPTY</button></a></a> <br>
-      <a href=""><button class="pixel" type="button" name="button">EMPTY</button></a></a>
-      <a href=""><button class="pixel" type="button" name="button">EMPTY</button></a></a>
-      <a href=""><button class="pixel" type="button" name="button">EMPTY</button></a></a> <br>
+      <a href="carnivores/introitus.html"><button class="pixel marginTop7" type="button" name="button">introitus</button></a></a>
+      <a href="carnivores/fleurs.html"><button class="pixel" type="button" name="button">fleurs</button></a></a>
+      <a href="carnivores/venin.html"><button class="pixel" type="button" name="button">venin</button></a></a> <br>
+      <a href="carnivores/dedaldense.html"><button class="pixel" type="button" name="button">dedaldense</button></a></a>
+      <a href="carnivores/articulation.html"><button class="pixel" type="button" name="button">articulation</button></a></a>
+      <a href="carnivores/aur.html"><button class="pixel" type="button" name="button">aur</button></a></a> <br>
+      <a href="carnivores/lux.html"><button class="pixel" type="button" name="button">lux</button></a></a>
+      <a href="carnivores/terne.html"><button class="pixel" type="button" name="button">terne</button></a></a>
+      <a href="carnivores/megastructure.html"><button class="pixel" type="button" name="button">megastructure</button></a></a> <br>
+      <a href="carnivores/temps.html"><button class="pixel" type="button" name="button">temps</button></a></a>
+      <a href="carnivores/aube.html"><button class="pixel" type="button" name="button">aube</button></a></a>
+      <a href="carnivores/vide.html"><button class="pixel" type="button" name="button">vide</button></a></a> <br>
     </div>
     <div id="mandi" class="center pixel vh100 padding10">
-      <a href="mandibule/lux_palpitat.html"><button class="pixel marginTop7" type="button" name="button">Lux Palpitat</button></a><br>
+      <a href="mandibules/lux_palpitat.html"><button class="pixel marginTop7" type="button" name="button">Lux Palpitat</button></a><br>
       <a href=""><button class="pixel" type="button" name="button">EMPTY</button></a><br>
       <a href=""><button class="pixel" type="button" name="button">EMPTY</button></a><br>
-      <a href=""><button class="pixel" type="button" name="button">EMPTY</button></a><br>
-      <a href=""><button class="pixel" type="button" name="button">EMPTY</button></a><br>
-      <a href=""><button class="pixel" type="button" name="button">EMPTY</button></a><br>
-      <a href=""><button class="pixel" type="button" name="button">EMPTY</button></a><br>
+      
     </div>
 
 
-    <div id="shell" class="col3 center">
+    <div id="shell" class="col3 center vh100">
       <div class="imgTxt" onclick="document.getElementById('03').style.display='block';">
        <img class="image" src="img/03.png" alt="Alt text" />
        <p class="txt pixel green img-border"><br><br>002</p>
@@ -100,10 +106,9 @@
     </div>
     <script src="js/modal.js" type="text/javascript"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script src="js/mouse/jquery.mousewheel.js" type="text/javascript"></script>
-    <script src="js/index.js" type="text/javascript"></script>
     <script src="js/sticky.js" type="text/javascript"></script>
     <script src="js/echo.js" type="text/javascript"></script>
+    <script src="sw_main.js" type="text/javascript"></script>
 
   </body>
 </html>

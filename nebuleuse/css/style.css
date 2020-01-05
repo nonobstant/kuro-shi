@@ -1,5 +1,5 @@
 /*
-Chintoxique Calligraphy
+Kuro-shi CSS
 Version: 1.0.0
 Author: Chintoxique and Nonobstant
 ex = exemple
@@ -13,7 +13,27 @@ ex = exemple
 /*Elements principaux*/
 * {
     margin:2px;
-    overflow: hidden;
+    overflow-x: hidden;
+    scrollbar-color: darkred #fff0;
+    scrollbar-width: thin;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #fff0;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: darkred;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: darkred;
 }
 
 body {
@@ -29,10 +49,7 @@ body {
 .center {
   text-align: center;
 }
-/*firefox hide scrollbar*/
-@-moz-document url-prefix() {
-    html,body{overflow: hidden !important;}
-}
+
 
 
 h1 {
@@ -340,8 +357,6 @@ top: 7%;
 left: 25%;
 width: 50%; /* Full width */
 height: 70%; /* Full height */
-overflow: auto; /* Enable scroll if needed */
-overflow-x: hidden;
 background-color: black; /* Black w/ opacity */
 padding-top: 60px;
 text-align: left;
@@ -434,6 +449,9 @@ to {transform: scale(1)}
 .prompt {
 
 }
+.marginTop7 {
+  margin-top: 15%;
+}
 .padTop35 {
   padding-top: 35px;
 }
@@ -470,6 +488,9 @@ to {transform: scale(1)}
   max-width: 80%;
   margin: auto;
 
+}
+#setup_button {
+    display: none;
 }
 /*Animation*/
 @keyframes filter-animation {

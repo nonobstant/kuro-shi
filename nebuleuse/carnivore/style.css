@@ -1,6 +1,6 @@
 /*
 Chintoxique Calligraphy
-Version: 1.0.0
+Version: 2.0.0
 Author: Chintoxique and Nonobstant
 ex = exemple
 */
@@ -14,9 +14,29 @@ ex = exemple
 /*Elements principaux*/
 * {
     margin:2px;
-    overflow: auto;
+    overflow-x: hidden;
+    overflow-y: auto;
+    scrollbar-color: darkred #fff0;
+    scrollbar-width: thin;
+}
+::-webkit-scrollbar {
+  width: 10px;
 }
 
+/* Track */
+::-webkit-scrollbar-track {
+  background: #fff0;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: darkred;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: darkred;
+}
 body {
     margin: 0;
 
@@ -25,7 +45,6 @@ body {
     background-size: cover;
     color: white;
     cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='30' height='30' viewport='0 0 100 100' style='fill:white;font-size:28px;'><text y='50%'>▪</text></svg>") 16 0,auto; /*Change juste l'emoji*/
-
 }
 .center {
   text-align: center;
@@ -46,6 +65,7 @@ p {
   display: block;
   background-color: black;
   font-size: 13px;
+  text-align: justify;
 
 }
 img:hover {
@@ -500,13 +520,13 @@ to {transform: scale(1)}
 /*POEM PAGE*/
 .box {
   max-width: 450px;
-  text-align: left;
+  text-align: justify;
   padding: 25px;
 }
 .sidebar {
   float: left;
   min-width: 15%;
-  height: 100vh;
+  height: 20vh;
   border-right: solid 3px darkred;
   text-align: center;
 }
@@ -523,5 +543,12 @@ to {transform: scale(1)}
   .modal {
     width: 95%;
     left: 0;
+  }
+  .sidebar {
+    float: none;
+    border-right: none;
+    border-bottom: solid 3px darkred;
+    width: 40%;
+    height: 15%;
   }
 }
